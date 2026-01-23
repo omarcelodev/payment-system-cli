@@ -1,0 +1,1 @@
+from .funcoes_terminal import clear, pause
