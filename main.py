@@ -1,5 +1,5 @@
 from payments import Pix, Card, Boleto
-from untils.funcoes_terminal import clear, pause
+from untils.terminal_commands import clear, pause
 from untils.input import get_option, get_value
 from untils.ui import print_menu, show_purchase_summary, error_message
 

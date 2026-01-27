@@ -17,6 +17,6 @@ def get_value():
             raise ValueError
         return value # Retorna o valor correto
     
-    except ValueError:
+    except ValueError: # Garante que o usuário digite números
         print("Valor Inválido")
         return None

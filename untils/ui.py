@@ -1,5 +1,5 @@
 
-#Imprime o menu de opções de pagamentos
+# Imprime o menu de opções de pagamentos
 def print_menu():
     print("=== PAGAMENTOS ===")
     print("(1) Pix")
@@ -7,10 +7,11 @@ def print_menu():
     print("(3) Boleto")
     print("(0) Sair")
 
-
+# Exibe mensagem de erro
 def error_message():
     print("Opção inválida. Tente novamente.")
 
+# Exibe o Resumo final da compra
 def show_purchase_summary(payment_name, original_value, final_value):
     print("=== RESUMO DA COMPRA ===")
     print(f"Forma de pagamento: {payment_name}")
