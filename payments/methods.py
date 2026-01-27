@@ -8,7 +8,7 @@ class Payment():
         return self.value
 
 class Pix(Payment): 
-    def calcular_final(self):
+    def calculate_final(self):
         return self.value * 0.95 #5% de desconto
 
 class Card(Payment):

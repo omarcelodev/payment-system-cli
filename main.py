@@ -9,13 +9,14 @@ payment_methods = {
     2: Card,
     3: Boleto
 }
+
 # Controla o fluxo do programa
 def main():
     while True:
         clear()
-        print_menu()
+        print_menu() # Impressão do Menu
         
-        chose = get_option()
+        chose = get_option() # Coletando opção do usuário
         if chose is None:
             pause()
             continue
@@ -23,21 +24,20 @@ def main():
         if chose == 0:
             break
         
-        payment_class = payment_methods.get(chose)
+        payment_class = payment_methods.get(chose) # Selecionado método de pagamento correto
         if not payment_class:
             error_message()
             pause()
             continue
 
-        value = get_value()
+        value = get_value() # Coletando o valor digitado pelo usuário   
         if value is None:
             pause()
             continue
 
-        payment = payment_class(value)
+        payment = payment_class(value) # Instancia a forma de pagamento escolhida com o valor da compra
 
-        clear
-
-        show_purchase_summary(payment_class.__name__, value, payment.final)
+        clear()
+        show_purchase_summary(payment_class.__name__, value, payment.final) # Resumo Final da compra
         pause()
 main()
