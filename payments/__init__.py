@@ -1,2 +1,2 @@
-from .methods import Pix, Card, Boleto
+from .methods import Pix, Credit_Card, Debit_Card, Boleto, Money
 

@@ -11,10 +11,18 @@ class Pix(Payment):
     def calculate_final(self):
         return self.value * 0.95 #5% de desconto
 
-class Card(Payment):
+class Credit_Card(Payment):
     def calculate_final(self):
         return self.value * 1.10 #10% de juros
 
+class Debit_Card(Payment):
+    def calculate_final(self):
+        return self.value #0% de desconto
+
+class Money(Payment):
+    def calculate_final(self):
+        return self.value * 0.85 #85% de desconto
+
 class Boleto(Payment):
     def calculate_final(self):
-        return self.value * 0.97 #3% de desconto
+        return self.value * 0.98 #2% de desconto

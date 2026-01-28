@@ -22,8 +22,10 @@ def print_menu():
     print()
     
     print("[1] Pix        (5% de desconto)")
-    print("[2] Cartão     (10% de juros)")
-    print("[3] Boleto     (3% de desconto)")
+    print("[2] Crédito    (10% de juros)")
+    print("[3] Débito     (0% desconto)")
+    print("[4] Boleto     (2% de desconto)")
+    print("[5] Dinheiro   (15% de desconto)")
     print()
     print("[0] Sair")
     print_separator()

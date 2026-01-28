@@ -1,13 +1,5 @@
 📌 Evoluções planejadas para o projeto PayFlow
 
-1️⃣ Adicionar relatório de vendas em arquivo CSV
-
-Criar/atualizar um arquivo sales_report.csv
-
-Registrar cada pagamento realizado
-
-Salvar data, forma de pagamento, valor original e valor final
-
 2️⃣ Adicionar novas formas de pagamento (Cartão Crédito e Débito)
 
 Criar classes separadas ou diferenciar tipos de cartão
@@ -28,6 +20,11 @@ project/
 │   ├── __init__.py
 │   └── methods.py
 │
+├── reports/  
+│   ├── __init__.py
+│   └── sales_report.py
+│  
+│  
 └── utils/
     ├── __init__.py
     ├── input.py
