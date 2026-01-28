@@ -18,7 +18,7 @@ def main():
         
         chose = get_option() # Coletando opção do usuário
         if chose is None:
-            pause()
+            pause("Digite ENTER para voltar...")
             continue
         
         if chose == 0:
@@ -27,17 +27,17 @@ def main():
         payment_class = payment_methods.get(chose) # Selecionado método de pagamento correto
         if not payment_class:
             show_error("Opção inválida. Tente novamente.")
-            pause()
+            pause("Digite ENTER para voltar...")
             continue
 
         value = get_value() # Coletando o valor digitado pelo usuário   
         if value is None:
-            pause()
+            pause("Digite ENTER para voltar...")
             continue
 
         payment = payment_class(value) # Instancia a forma de pagamento escolhida com o valor da compra
 
         clear()
         show_purchase_summary(payment_class.__name__, value, payment.final) # Resumo Final da compra
-        pause()
+        pause("Digite ENTER para continuar...")
 main()
