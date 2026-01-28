@@ -17,22 +17,6 @@ Aplicar regras distintas de cálculo (juros ou desconto)
 
 Atualizar o menu e o mapeamento de opções
 
-5️⃣ Padronizar mensagens e saídas do sistema
-
-Mensagens de erro mais claras
-
-Confirmação visual após pagamento
-Interface de terminal mais consistente
-
-1️⃣ Melhorar a exibição dos valores no terminal
-
-Formatar valores em moeda (R$)
-
-Exibir valor original e valor final
-
-Mostrar a forma de pagamento escolhida
-
-
 Estrutura:
 
 project/

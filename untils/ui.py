@@ -29,14 +29,27 @@ def print_menu():
 
 # Imprime o Resumo final da compra
 def show_purchase_summary(payment_name, original_value, final_value):
+    difference = original_value - final_value
+
     print_separator()
     print("        RESUMO DA COMPRA")
     print_separator()
     print()
     print(f"Forma de pagamento : {payment_name}")
     print(f"Valor da Compra    : {format_currency(original_value)}")
+
+    if difference > 0:
+        print(f"Valor do Desconto  : {format_currency(difference)}")
+    elif difference < 0:
+        print(f"Valor de juros     : {format_currency(difference)} ")
+
     print(f"Valor Final        : {format_currency(final_value)}")
+    print()
+
+# Imprime a confirmação do pagamento
+def show_confirm_payment():
     print()
     print_separator()
     print("✔ Pagamento processado com sucesso")
     print_separator()
+    print()
