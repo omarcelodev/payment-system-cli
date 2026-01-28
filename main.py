@@ -21,7 +21,7 @@ def main():
             pause("Pressione ENTER para voltar...")
             continue
         
-        if chose == 0:
+        if chose == 0: # Encerra o Programa
             break
         
         payment_class = payment_methods.get(chose) # Selecionado método de pagamento correto
