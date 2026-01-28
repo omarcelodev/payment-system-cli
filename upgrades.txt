@@ -1,16 +1,6 @@
 📌 Evoluções planejadas para o projeto PayFlow
 
 
-1. Refinar as funções para uma única responsabilidade
-
-Separar entrada de dados, validação e exibição
-
-Reduzir funções que fazem mais de uma coisa
-
-Deixar o main() só como controlador de fluxo
-
-
-
 3️⃣ Adicionar relatório de vendas em arquivo CSV
 
 Criar/atualizar um arquivo sales_report.csv
