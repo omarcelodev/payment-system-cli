@@ -21,7 +21,7 @@ class Debit_Card(Payment):
 
 class Money(Payment):
     def calculate_final(self):
-        return self.value * 0.85 #85% de desconto
+        return self.value * 0.85 #15% de desconto
 
 class Boleto(Payment):
     def calculate_final(self):

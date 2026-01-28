@@ -1,13 +1,5 @@
 📌 Evoluções planejadas para o projeto PayFlow
 
-2️⃣ Adicionar novas formas de pagamento (Cartão Crédito e Débito)
-
-Criar classes separadas ou diferenciar tipos de cartão
-
-Aplicar regras distintas de cálculo (juros ou desconto)
-
-3️⃣ Adicionar sistema de volta caso valor da compra seja digitado errado
-
 4️⃣ Adicionar Sistema de parcelamento
 
 
