@@ -1,7 +1,7 @@
 from payments import Pix, Card, Boleto
 from untils.terminal_commands import clear, pause
 from untils.input import get_option, get_value
-from untils.ui import print_menu, show_purchase_summary, error_message
+from untils.ui import print_menu, show_purchase_summary, show_error
 
 #Dicionário para mapear as opções do usuário para as classes de pagamento
 payment_methods = {
@@ -26,7 +26,7 @@ def main():
         
         payment_class = payment_methods.get(chose) # Selecionado método de pagamento correto
         if not payment_class:
-            error_message()
+            show_error("Opção inválida. Tente novamente.")
             pause()
             continue
 

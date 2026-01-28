@@ -1,5 +1,18 @@
+# Imprime separador
 def print_separator():
     print("=" * 40)
+
+# Imprime o valor formatado para moeda BRL(real)
+def format_currency(value):
+    return f"R$ {value:,.2f}".replace("," , "X").replace(".", ",").replace("X", ".")
+
+# Imprime mensagem de erro
+def show_error(message):
+    print()
+    print("⚠ ERRO")
+    print(message)
+    print()
+    print_separator()
 
 # Imprime o menu de opções de pagamentos
 def print_menu():
@@ -14,14 +27,7 @@ def print_menu():
     print("[0] Sair")
     print_separator()
 
-def format_currency(value):
-    return f"R$ {value:,.2f}".replace("," , "X").replace(".", ",").replace("X", ".")
-
-# Exibe mensagem de erro
-def error_message():
-    print("Opção inválida. Tente novamente.")
-
-# Exibe o Resumo final da compra
+# Imprime o Resumo final da compra
 def show_purchase_summary(payment_name, original_value, final_value):
     print_separator()
     print("        RESUMO DA COMPRA")

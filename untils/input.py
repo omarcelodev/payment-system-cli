@@ -1,9 +1,11 @@
+from .ui import show_error
+
 #Função garante que o usuário digite um número // O programa não quebra
 def get_option():
     try:
         chose = int(input("Escolha a forma de pagamento: "))
     except ValueError:
-        print("Opção inválida")
+        show_error("Opção inválida. Tente novamente.")
         return None
     return chose
 
@@ -18,5 +20,5 @@ def get_value():
         return value # Retorna o valor correto
     
     except ValueError: # Garante que o usuário digite números
-        print("Valor Inválido")
+        show_error("Opção inválida. Tente novamente.")
         return None
