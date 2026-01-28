@@ -6,7 +6,8 @@
 Estrutura:
 project/
 │
-├── main.py
+│
+├── .venv/
 │
 ├── payments/
 │   ├── __init__.py
@@ -16,10 +17,14 @@ project/
 │   ├── __init__.py
 │   └── sales_report.py
 │  
-│  
-└── utils/
-    ├── __init__.py
-    ├── input.py
-    ├── ui.py
-    └── formatting.py
-
+├── utils/
+│   ├── __init__.py
+│   ├── input.py
+│   ├── terminal_commands.py
+│   ├── ui.py
+│
+├── .gitattributes
+├── LICENSE
+├── main.py
+├── requirements.txt
+└── sales_report.csv
