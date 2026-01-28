@@ -2,7 +2,7 @@ from payments import Pix, Card, Boleto
 from untils.terminal_commands import clear, pause
 from untils.input import get_option, get_value
 from untils.ui import print_menu, show_purchase_summary, show_error, show_confirm_payment
-from sales_report import save_sale
+from reports import save_sale
 
 #Dicionário para mapear as opções do usuário para as classes de pagamento
 payment_methods = {
