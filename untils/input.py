@@ -9,8 +9,6 @@ def get_option():
         return None
     return chose
 
-
-
 #Função para garantir que o usuário não digite strings ou valores negativos/zero
 def get_value():
     try:  # Garante que o valor seja um número flaot postivo e não quebre o programa

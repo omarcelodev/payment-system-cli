@@ -20,6 +20,7 @@ def print_menu():
     print("              PAGAMENTOS")
     print_separator()
     print()
+    
     print("[1] Pix        (5% de desconto)")
     print("[2] Cartão     (10% de juros)")
     print("[3] Boleto     (3% de desconto)")
@@ -35,14 +36,13 @@ def show_purchase_summary(payment_name, original_value, final_value):
     print("        RESUMO DA COMPRA")
     print_separator()
     print()
+
     print(f"Forma de pagamento : {payment_name}")
     print(f"Valor da Compra    : {format_currency(original_value)}")
-
     if difference > 0:
         print(f"Valor do Desconto  : {format_currency(difference)}")
     elif difference < 0:
         print(f"Valor de juros     : {format_currency(difference)} ")
-
     print(f"Valor Final        : {format_currency(final_value)}")
     print()
 
