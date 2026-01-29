@@ -20,6 +20,22 @@ This project was developed as a **study case** to practice clean architecture, b
 
 ---
 
+## 📸 Screenshots
+
+### 1. Main Menu
+![Program Menu](assets/menu.png)
+
+### 2. Chose Option
+![Chosse Option](assets/chose-option.png)
+
+### 3. Resume Payment
+![Resume Payment](assets/resume.png)
+
+### 4. Confirm Payment
+![Confirm Payment](assets/confirm-payment.png)
+---
+
+
 ## 🧱 Project Structure
 
 ```
