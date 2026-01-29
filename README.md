@@ -68,7 +68,7 @@ project/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/payment-system-cli.git
+   git clone https://github.com/omarcelodev/payment-system-cli.git
 
 2. Navigate to the project folder:
 
