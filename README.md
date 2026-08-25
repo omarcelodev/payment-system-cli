@@ -1,148 +1,167 @@
-# 💳 Payment System CLI
+# Payment System CLI
 
-A simple and well-structured **command-line payment system** built with Python.  
-This project was developed as a **study case** to practice clean architecture, basic OOP principles, and user-friendly CLI design.
+A command-line payment system built with Python that supports multiple payment methods, automatic price adjustments, input validation, and CSV-based sales reporting.
 
----
+This project was developed as a study project to practice object-oriented programming, separation of concerns, modular design, and CLI development.
 
-## 📌 Features
+## Features
 
-- Multiple payment methods:
-  - Pix (5% discount)
-  - Credit Card (10% interest)
-  - Debit Card (no discount/interest)
-  - Boleto (2% discount)
-  - Cash (15% discount)
-- Automatic calculation of final price
-- Clean and readable terminal interface
-- Sales history saved in a CSV file
-- Error handling for invalid inputs
+* Multiple payment methods:
 
----
+  * Pix — 5% discount
+  * Credit Card — 10% interest
+  * Debit Card — no discount or interest
+  * Boleto — 2% discount
+  * Cash — 15% discount
+* Automatic final price calculation
+* Input validation and error handling
+* Terminal-based user interface
+* Payment confirmation flow
+* Sales history stored in a CSV file
 
-## 📸 Screenshots
+## Screenshots
 
-### 1. Main Menu
-![Program Menu](assets/menu.png)
+### Main Menu
 
-### 2. Chose Option
-![Chosse Option](assets/chose-option.png)
+![Main Menu](assets/menu.png)
 
-### 3. Resume Payment
-![Resume Payment](assets/resume.png)
+### Payment Method Selection
 
-### 4. Confirm Payment
-![Confirm Payment](assets/confirm-payment.png)
+![Payment Method Selection](assets/chose-option.png)
 
-### 5. Exemple CSV
-![Confirm Payment](assets/csv-exemple.png)
----
+### Payment Summary
 
+![Payment Summary](assets/resume.png)
 
-## 🧱 Project Structure
+### Payment Confirmation
 
-```
+![Payment Confirmation](assets/confirm-payment.png)
 
-project/
-│
+### CSV Sales Report
+
+![CSV Sales Report](assets/csv-exemple.png)
+
+## Project Structure
+
+```text
+payment-system-cli/
 ├── payments/
-│   ├── **init**.py
-│   └── methods.py        # Payment methods and business rules
+│   ├── __init__.py
+│   └── methods.py              # Payment methods and business rules
 │
 ├── reports/
-│   ├── **init**.py
-│   └── sales_report.py   # CSV sales report generation
+│   ├── __init__.py
+│   └── sales_report.py         # CSV sales report generation
 │
 ├── utils/
-│   ├── **init**.py
-│   ├── input.py          # User input validation
+│   ├── __init__.py
+│   ├── input.py                # User input validation
 │   ├── terminal_commands.py
-│   └── ui.py             # Terminal UI and formatting
+│   └── ui.py                   # Terminal UI and formatting
 │
-├── main.py               # Application entry point
+├── main.py                     # Application entry point
 ├── requirements.txt
 └── LICENSE
-
-````
-
----
-
-## 🧠 Design Decisions
-
-- **Separation of concerns**  
-  Business logic, UI, input handling, and persistence are separated into different modules.
-
-- **Object-Oriented Programming**  
-  Each payment method is implemented as a class using inheritance and polymorphism, making the system easy to extend.
-
-- **Extensibility**  
-  New payment methods can be added without modifying existing logic.
-
-- **CLI UX matters**  
-  Even as a terminal application, the interface was designed to be clear and friendly.
-
----
-
-## ▶️ How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/omarcelodev/payment-system-cli.git
-
-2. Navigate to the project folder:
-
-   ```bash
-   cd payment-system-cli
-   ```
-
-3. (Optional) Create and activate a virtual environment
-
-4. Run the application:
-
-   ```bash
-   python main.py
-   ```
-
----
-
-## 📄 Sales Report
-
-All completed payments are saved in a CSV file:
-
 ```
+
+## Design
+
+### Separation of Concerns
+
+Business rules, terminal interface, input handling, and report generation are separated into dedicated modules.
+
+### Object-Oriented Programming
+
+Payment methods are represented by classes that use inheritance and polymorphism to encapsulate their respective pricing rules.
+
+### Extensibility
+
+The payment logic is structured so that additional payment methods can be introduced without concentrating every pricing rule in the application flow.
+
+### CLI Design
+
+The terminal interface provides a structured flow for selecting a payment method, reviewing the calculated amount, and confirming the transaction.
+
+## Sales Report
+
+Completed payments are stored in:
+
+```text
 sales_report.csv
 ```
 
 Each record contains:
 
-* Date
-* Payment method
-* Original value
-* Final value (with discount or interest)
+* date;
+* payment method;
+* original value;
+* final value after the applicable discount or interest.
 
----
+## Getting Started
 
-## 🚀 Possible Improvements
+### Prerequisites
 
-* Add automated tests
-* Allow viewing reports directly from the CLI
-* Support coupons or promotional discounts
-* Export reports in other formats (JSON, PDF)
-* Improve internationalization (currency and language)
+* Python 3
 
----
+### Installation
 
-## 📚 Purpose
+Clone the repository:
 
-This project was created for **learning and portfolio purposes**, focusing on:
+```bash
+git clone https://github.com/omarcelodev/payment-system-cli.git
+cd payment-system-cli
+```
 
-* Code organization
-* Clean architecture
-* Practical Python usage
-* Writing maintainable and readable code
+Optionally, create a virtual environment:
 
----
+```bash
+python -m venv .venv
+```
 
-## 🧑‍💻 Author
+Activate it on Linux or macOS:
 
-Developed by **Marcelo**
+```bash
+source .venv/bin/activate
+```
+
+Or on Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Application
+
+```bash
+python main.py
+```
+
+## Possible Improvements
+
+* [ ] Add automated tests
+* [ ] Allow sales reports to be viewed directly from the CLI
+* [ ] Add coupons and promotional discounts
+* [ ] Support additional report formats
+* [ ] Improve currency and language configuration
+
+## What I Learned
+
+This project was developed to practice software development fundamentals in Python, including:
+
+* object-oriented programming;
+* inheritance and polymorphism;
+* separation of responsibilities;
+* modular code organization;
+* input validation;
+* file-based persistence with CSV;
+* terminal application design.
+
+## License
+
+This project is licensed under the terms provided in the [LICENSE](LICENSE) file.
