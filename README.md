@@ -164,4 +164,6 @@ This project was developed to practice software development fundamentals in Pyth
 
 ## License
 
-This project is licensed under the terms provided in the [LICENSE](LICENSE) file.
+This project is licensed under the [MIT License](LICENSE).
+
+© 2026 Marcelo Gomes
